@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    background-color: #f3eae3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    line-height: 100%;
+}
+
+h1{
+    color: hsl(212, 21%, 14%);
+}
+
+h2{
+    color: #3d8168;
+}
+
+p {
+    line-height: 150%;
+    word-spacing: 5px;
+}
+
+.image-box{
+    width: 300px;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 0 0 15px;
+}
+
+.product-description{
+    width: 300px;
+    padding: 30px 0 30px 0;
+}
+
+.description-wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.old-price{
+    text-decoration: line-through;
+    text-decoration-color: hsl(228, 12%, 48%);
+}
+
+.add-to-cart{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    background-color: #3d8168;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.add-to-cart:hover{
+    background-color: #1a4031;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px){
+    body{
+        padding: 20px;
+    }
+    h1{
+        font-size: 2.5em;
+        width: 350px;
+    }
+    main{
+        flex-direction: column;
+        width: 90%;
+        max-width: 500px;
+        min-width: 350px;
+        border-radius: 10px;
+    }
+
+    
+    .image-box{
+        height: 250px;
+        background-image: url("images/image-product-mobile.jpg");
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+
+    .product-description{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .description-wrapper{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-to-cart{
+        border-radius: 10px;
+    }
+
+
+}
