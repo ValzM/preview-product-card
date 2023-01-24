@@ -40,10 +40,9 @@ p {
 
 .image-box{
     width: 300px;
-    background-image: url("images/image-product-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px 0 0 15px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-description{
@@ -54,6 +53,10 @@ p {
 .description-wrapper{
     width: 80%;
     margin: auto;
+}
+
+.product-type{
+    letter-spacing: 5px;
 }
 
 .price{
@@ -106,7 +109,6 @@ p {
     
     .image-box{
         height: 250px;
-        background-image: url("images/image-product-mobile.jpg");
         border-radius: 10px 10px 0 0;
         width: 100%;
     }
